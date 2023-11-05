@@ -1,35 +1,44 @@
-<style>
-    * {
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider Game</title>
+
+    <style>
+      * {
         margin: 0;
         padding: 0;
-    }
+      }
 
-    html,
-    body {
+      html,
+      body {
         overflow: hidden;
         padding: 10px;
         margin: 0;
         height: 100%;
         background-color: black;
-    }
+      }
 
-    .canvas-div {
+      .canvas-div {
         width: 100%;
         height: 100%;
-    }   
+      }
 
-    canvas {
+      canvas {
         background: #211f1f;
         border: 2px solid silver;
-    }
-</style>
-<audio id="hitSound">
-    <!-- <source src="Content/hit ball.mp3" type="audio/mp3"> -->
-</audio>
-<audio id="missSound">
-    <!-- <source src="Content/ball miss.mp3" type="audio/mp3"> -->
-</audio>
-<div class="canvas-div">
-    <canvas id="myCanvas"></canvas>
-</div>
-<script src="Index.js"></script>
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="hitSound">
+      <source src="Content/hit ball.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="missSound">
+      <source src="Content/ball miss.mp3" type="audio/mp3" />
+    </audio>
+    <div class="canvas-div">
+      <canvas id="myCanvas"></canvas>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
